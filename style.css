@@ -1,0 +1,370 @@
+/* IMPORT STATEMENTS */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* :root {
+    --primary-color: #1E1C1C;
+    --secondary-color: #81D959;
+    --accent-color: #FFFDFA;
+} */
+
+body {
+    background-color: #fffdfa;
+}
+
+
+/* CODE FOR INTRO VIDEO */
+
+.introImg {
+    background-color: #FFFDFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: transparent;
+    position: relative;
+}
+
+.introImg::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(aquamarine,aqua,cornflowerblue);
+    z-index: -1;
+    opacity: .5;
+}
+
+.introImg > h1{
+    font-size: 8vw;
+}
+
+/* CODE FOR INTRO SECTION*/
+
+.intro-section {
+    background-color: #1E1C1C;
+    color: #FFFDFA;
+}
+
+.intro-section > h1{
+    font-size: 5vw;
+    padding: 4vh 0;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-weight: 100;
+}
+
+.intro-section > h4{
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+
+
+/* CODE FOR PRODUCTS SECTION */
+
+
+.steps-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #1E1C1C;
+    padding: 15vh 2vw;
+    font-size: 1.2vw;
+    padding-bottom: 20vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    color: #FFFDFA;
+}
+
+.steps{
+    display: flex;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+.step{
+    width: 20vw;
+    font-size: 1.5vw;
+    padding: 1vh 1vw;
+    /* border: 1px solid #81D959; */
+}
+
+.steps img{
+    border-radius: 1vw;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.step strong{
+    color: #81D959;
+}
+
+.steps-text{
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps-text span{
+    font-size: 5vw;
+    font-family: 'Righteous' , cursive;
+}
+
+/* CODE FOR REVIEW SECTION */
+
+.review-text{
+    font-family: 'Righteous' , cursive;
+    font-size: 5vw;
+    text-align: center;
+    color: #81D959;
+    -webkit-text-stroke: 1px #1E1C1C;
+}
+
+.reviews{
+    padding: 5vh 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.review{
+    position: relative;
+    width: 25vw;
+    border: 1px solid #1E1C1C;
+    overflow:hidden;
+    border-radius: 1vw;
+    font-weight: 900;
+    margin-bottom: 5vh;
+    font-size: 1.5vw;
+    background-color: #81D959;
+}
+
+.review::before{
+    position: absolute;
+    content: attr(data-text);
+    background-color: #1e1c1c6e;
+    display: grid;
+    place-content: center;
+    color: #FFFDFA;
+    font-size: 2.5vw;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    transition: .6s .2s;
+}
+
+.review:hover::before{
+    top: 0;
+}
+
+.review p{
+    padding: 1vh 1vw;
+    border-top: 1px solid #1E1C1C;
+    z-index: 2;
+}
+
+.reviews-section img{
+    width: 100%;
+    transition: .2s;
+}
+
+
+
+/* CODE FOR FAQ SECTION */
+
+.faqs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1E1C1C;
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
+    padding: 20vh 0;
+    box-shadow: 0 10px 10px black;
+}
+
+.faqText{
+    width: 40vw;
+    font-size: 5vw;
+    color: #FFFDFA;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-weight: 100;
+}
+
+.questions > details{
+    font-size: 1.2vw;
+    padding: 1vh 1vw;
+    font-weight: 900;
+    width: 50vw;
+    background-color: #81D959;
+    margin-bottom: 2vh;
+}
+
+.questions summary{
+    margin: 1vh;
+    color: #1E1C1C;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+
+
+/* CODE FOR VISION AND MISSION SECTION */
+
+.about-sec{
+    font-size: 1.7vw;
+    padding: 5vh 0;
+}
+
+.about-sec h1{
+    position: relative;
+    padding: 1vh 2vw;
+    margin-bottom: 1vh;
+    font-family: 'Righteous', cursive;
+    font-weight: 100;
+}
+
+.about-sec h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: .3vw;
+    background-color: #81D959;
+}
+
+.about1{
+    padding: 10vh 2vw;
+}
+
+.about1 > h1{
+    font-size: 5vw;
+}
+
+.vis-mis > div{
+    width: 40vw;
+}
+
+.vis-mis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.vis-mis h1{
+    font-size: 5vw;
+}
+
+.vis-mis ul{
+    list-style-position: inside;
+}
+
+/* CODE FOR FOOTER */
+
+footer{
+    background-color: #1E1C1C;
+    padding: 2vh 2vw;
+    color: #81D959;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright{
+    font-size: 1vw;
+}
+
+footer img {
+    height: 5vh;
+    margin: 0 1vw;
+    transition: .2s;
+}
+
+footer img:hover{
+    transform: rotateZ(-15deg);
+}
+
+
+/* CODE FOR RESPONSIVENESS */
+
+
+@media screen and (max-width:650px) {
+
+    .introImg{
+        height: 20vh;
+    }
+
+    .intro-section > h1{
+        font-size: 8vw;
+        padding: 2vh 0;
+    }
+
+    .intro-section > h4{
+        font-size: 4vw;
+    }
+    
+    .steps-section{
+        padding: 3vh 2vw 8vh 2vw;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .steps{
+        width: 100vw;
+    }
+
+    .steps-text{
+        width: 100vw;
+        margin-bottom: 1vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .reviews{
+        padding: 2vh 4vw 0vh 4vw;
+    }
+
+    .faqs{
+        flex-direction: column;
+        padding: 20vh 0 12vh 0;
+    }
+
+    .questions > details{
+        width: 90vw;
+        font-size: 2.2vw;
+    }
+
+    .questions summary{
+        font-size: 2.5vw;
+    }
+
+    .about-sec{
+        padding: 2vh 0;
+    }
+
+    .about1{
+        padding: 2vh 2vw;
+    }
+
+    footer{
+        padding: 1vh 3vw;
+    }
+
+    footer img{
+        height: 3vh;
+    }
+}

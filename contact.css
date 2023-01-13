@@ -1,0 +1,244 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+    background-color: #FFFDFA;
+}
+
+
+section{
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 200vw;
+    right: -100%;
+    bottom: -40%;
+    z-index: -2;
+    transform: rotate(-20deg);
+    background: #1E1C1C;
+}
+
+input{
+    display: block;
+}
+
+.conform , .conInfo{
+    width: 30vw;
+    max-height: 90%;
+    border-radius: 2vw;
+    padding: 2vh 2vw;
+    background-color: #FFFDFA;
+    border: 3px solid #81D959;
+    font-size: 2vw;
+}
+
+.conform > h1 , .conInfo > h1{
+    font-size: 3vw;
+    margin-bottom: 3vh;
+    font-family: 'Righteous', cursive;
+    font-weight: 200;
+}
+
+.conform option{
+    width: 100%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 1vh 1vw;
+    margin-bottom: 2vh;
+    border: 1px solid #1E1C1C;
+    border-radius: .5vw;
+    transition: .2s;
+}
+
+input:focus,textarea:focus{
+    outline-color: #81D959;
+}
+
+input{
+    height: 6vh;
+}
+
+input[type="submit"]{
+    padding: 0;
+    height: 6vh;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #1E1C1C;
+    background-color: #81D959;
+    transition: all 150ms ease-in;
+    font-weight: 700;
+    font-size: 2vw;
+    font-family: 'Rajdhani' , cursive;
+}
+
+input[type="submit"]:hover{
+    background-color: #53b327;
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+}
+
+
+/* CODE FOR LINKS AND CONTACT DETAILS */
+
+
+.conInfo img{
+    height: 5vh;
+    transition: .2s;
+}
+
+.conInfo img:hover{
+    transform: rotateZ(-15deg);
+}
+
+.conInfo > h1{
+    margin-bottom: 10vh;
+}
+
+.topBox{
+    border-bottom: 1px solid;
+}
+
+.topBox > a{
+    width: 100%;
+    display: flex;
+    margin: 5vh 0;
+    align-items: center;
+    text-decoration: none;
+    color: #1E1C1C;
+    transition: .1s;
+}
+
+.topBox img{
+    margin-right: 3vw;
+}
+
+.topBox > a:hover{
+    color: #81D959;
+}
+
+
+.media-links{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.join-btn{
+    background-color: #81D959;
+    font-weight: 700;
+    color: #1E1C1C;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Rajdhani' , cursive;
+    font-size: 2vw;
+    padding: 2vh 0;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+}
+
+.join-btn img{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.join-btn:hover{
+    box-shadow: 0 0 15px #53b327 inset;
+}
+
+
+/* CODE FOR RESPONSIVENESS */
+
+@media screen and (max-width:650px) {
+
+    .contact{
+        flex-direction: column;
+    }
+
+    section{
+        padding: 2vh 2vw;
+    }
+
+    .conform , .conInfo{
+        width: 80vw;
+        padding: 2vh 3vw 0 3vw;
+    }
+
+    .conform > h1 , .conInfo > h1{
+        font-size: 6vw;
+    }
+
+    input,textarea{
+        margin-bottom: 1.5vh;
+    }
+
+    input{
+        height: 3vw;
+    }
+
+    input::placeholder , textarea{
+        font-size: 2vw;
+    }
+
+    textarea{
+        height: 15vh;
+    }
+
+    input[type="submit"]{
+        height: 3vh;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .conInfo img{
+        width: 5vw;
+        height: auto;
+    }
+
+    .conInfo > h1{
+        margin-bottom: 3vh;
+    }
+
+    .topBox > a{
+        margin: 3vh 0;
+    }
+
+    .media-links{
+        height: 5vh;
+    }
+    .join-btn{
+        font-size: 4vw;
+        padding: 1vh 0;
+        margin-bottom: 1vh;
+    }
+    .join-btn img{
+        height: 2vh;
+    }
+}

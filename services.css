@@ -1,0 +1,205 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Gafata&family=Major+Mono+Display&family=Monoton&family=Rajdhani:wght@300&family=Raleway:wght@200&family=Syncopate&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+:root {
+    --primary-color: #1E1C1C;
+    --secondary-color: #81D959;
+    --accent-color: #FFFDFA;
+}
+
+
+
+/* CODE FOR PRODUCT SECTION */
+
+.product{
+    display: flex;
+    margin-bottom: 1vw;
+    justify-content: space-between;
+}
+
+.product > div{
+    padding: 5vh 2vw;
+    width: 50%;
+}
+
+.product-images , .product-images2, .product-images3{
+    background-color: var(--accent-color);
+    margin-top: 0;
+}
+
+.main-img , .main-img2,.main-img3{
+    margin-bottom: 2vw;
+    width: 45vw;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.product-images > div img , .product-images2 > div img, .product-images3 > div img{
+    width: 10vw;
+    height: 10vw;
+    transition: .3s;
+    border-radius: 1vw;
+}
+
+.product-images > div , .product-images2 > div, .product-images3 > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* CODE FOR PRODUCT DETAILS */
+
+
+
+.product-details{
+    padding: 5vh 5vw;
+    /* background-color: var(--secondary-color); */
+    background-color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: #81D959;
+}
+
+.product-details > h1{
+    font-size: 4vw;
+    position: relative;
+    padding: 2vh 2vw;
+    width: fit-content;
+    font-family: 'Felix Titling' , sans-serif;
+    /* background-color: var(--accent-color); */
+    background-color: #81D959;
+    border-radius: 1vw;
+    margin-bottom: 5vh;
+    transition: .2s;
+    color: var(--primary-color);
+}
+
+.product-details > h1:hover{
+    /* box-shadow: 0px 0px 5px black inset; */
+    box-shadow: 0px 0px 0.5vw rgba(230, 217, 217, 0.849) inset;
+}
+
+.sub-heading{
+    font-size: 2vw;
+    color: var(--accent-color);
+}
+
+.range-box{
+    width: fit-content;
+    padding: 2vh 2vw;
+    font-weight: 600;
+    margin: 2vh 0;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+.range-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    background-color: #FFFDFA;
+}   
+
+.specTit{
+    font-size: 2vw;
+    color: var(--accent-color);
+}
+
+.specsList li{
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.specsList img{
+    width: 5vw;
+    margin-right: 1vw;
+}
+
+.product-details a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    margin: 5vh 0;
+    background-color: var(--accent-color);
+    width: fit-content;
+    padding: 1vh 1vw;
+    transition: .2s;
+}
+
+.product-details a:hover{
+    /* box-shadow: .3vh .3vw 0 var(--primary-color); */
+    box-shadow: .6vh .3vw 0 #81D959;
+    text-decoration: underline;
+}
+
+/* CODE FOR FOOTER */
+
+footer{
+    background-color: var(--primary-color);
+    color: #81D959;
+    height: 7vh;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1vw;
+    border-top: 1px solid #81D959;
+}
+
+footer img {
+    height: 5vh;
+    margin: 0 1vw;
+    transition: .2s;
+}
+
+footer img:hover{
+    transform: rotateZ(-15deg) scale(1.1);
+}
+
+
+
+@media only screen and (max-width:750px) {
+    .main-img, .main-img2, .main-img3{
+        width: 55vw;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+    }
+
+    .product-images, .product-images3{
+        margin-right: 5vw;
+    }
+    
+    .main-img,.main-img2,.main-img3{
+        margin-bottom: 2vw;
+    }
+    .product-images>div>img, .product-images2>div>img, .product-images3>div>img{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .specTit{
+        font-size: 2.8vw;
+    }
+    .specsList>li{
+        font-size: 2.2vw;
+    }
+    .copyright{
+        font-size: 2.3vw;
+    }
+    .social-links > a > img{
+        width: 7vw;
+        height: 7vw;
+    }
+}

@@ -1,0 +1,350 @@
+    /* IMPORT STATEMENT */
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+
+    body::-webkit-scrollbar{
+        width: 1vw;
+    }
+    body::-webkit-scrollbar-track{
+        background-color: #E4E4E4;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: #81D959;
+        border-radius: 50vw;
+    }
+
+
+    /* CODE FOR NAVBAR */
+
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 5vh;
+        display: flex;
+        z-index: 5;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vh 1vw;
+        background-color: #1E1C1C;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+        height: 4vh;
+        filter: brightness(60);
+    }
+
+    /* CODE FOR SIDEBAR */
+
+    .sidebar {
+        background-color: #fffdfa;
+        position: fixed;
+        z-index: 6;
+        border-right: 1px solid #1E1C1C;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: -50vw;
+        height: 100vh;
+        width: 25vw;
+        padding: 5vh 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 2vh 2vw;
+        font-size: 3vw;
+        margin: 1vh;
+        text-decoration: none;
+        color: #1E1C1C;
+        font-weight: 900;
+        font-family: 'Rajdhani', sans-serif;
+        position: relative;
+    }
+
+    .sidebar a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: #81D959;
+        width: 0;
+        transition: 500ms;
+        border-radius: 2vw;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar a:hover::before {
+        width: 100%;
+    }
+
+
+    /* CODE FOR MENU BUTTON */
+
+
+    #container {
+        height: 3vw;
+        width: 3vw;
+        display: grid;
+        margin-right: 4vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #sub-container {
+        display: none;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        column-gap: 1vw;
+    }
+
+    #dot1,
+    #dot2,
+    #dot3 {
+        width: .7vw;
+        aspect-ratio: 1/1;
+        /* border: 1px solid; */
+        background: white;
+        border-radius: 100%;
+    }
+
+    #dash1,
+    #dash2,
+    #dash3 {
+        width: 4vw;
+        height: .3vh;
+        margin-bottom: .3vh;
+        /* border: 0.1px solid white; */
+        background-color: white;
+    }
+
+    #dash1 {
+        position: relative;
+        /* animation: rotate1 0.5s ease 0.3s forwards; */
+    }
+
+    #dash3 {
+        position: relative;
+        /* animation: rotate2 0.5s ease  0.3s forwards; */
+    }
+
+    #dash2 {
+        position: relative;
+        /* animation: rotateDash2 0.3s ease forwards; */
+    }
+
+    /* CODE FOR MENUBAR */
+
+    #menuBar {
+        position: absolute;
+        right: 0;
+        padding: 2vh 1vw;
+    }
+
+    #menuBar a {
+        position: relative;
+        text-decoration: none;
+        color: #fffdfa;
+        padding: 0.5vh 1.5vw;
+        font-size: 2vw;
+        overflow: hidden;
+    }
+
+    #menuBar a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 2vw;
+        background-color: #81D959;
+        z-index: -1;
+        transition: 0.5s .2s;
+    }
+
+    #menuBar a:hover::before {
+        width: 100%;
+    }
+
+    .curr-page {
+        border-radius: 2vw;
+        /* background-color: #81D959; */
+        outline: 1px solid #fffdfa;
+        transition: .5s 1s;
+    }
+
+    .curr-page:hover {
+        outline: none;
+    }
+
+    /* ANIMATION KEYFRAMES */
+
+    @keyframes rotateDash2 {
+        0% {
+            right: 0vw;
+            top: 0;
+            opacity: 1;
+        }
+
+        100% {
+            right: 2vw;
+            top: 0.05vw;
+            opacity: 0;
+        }
+    }
+
+    @keyframes rerotateDash2 {
+        0% {
+            right: 2vw;
+            top: 0.05vw;
+            opacity: 0;
+        }
+
+        100% {
+            right: 0vw;
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes extentDash2NDot {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes reextentDash2NDot {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes rotate1 {
+        0% {
+            transform: rotate(0deg);
+            top: 0vw;
+            left: 0vw;
+        }
+
+        100% {
+            transform: rotate(45deg);
+            top: 1vh;
+            right: .9vw;
+        }
+
+    }
+
+    @keyframes rerotate1 {
+
+
+        0% {
+            transform: rotate(45deg);
+            top: 1vh;
+            right: .9vw;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            top: 0vw;
+            left: 0vw;
+        }
+
+    }
+
+    @keyframes rotate2 {
+        0% {
+            transform: rotate(0deg);
+            top: 0vw;
+            left: 0vw;
+        }
+
+        100% {
+            transform: rotate(-45deg);
+            bottom: .2vh;
+            /* top: 1vh; */
+            right: 1vw;
+        }
+
+    }
+
+    @keyframes rerotate2 {
+
+
+        0% {
+            transform: rotate(-45deg);
+            bottom: .2vh;
+            right: 1vw;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            top: 0vw;
+            left: 0vw;
+        }
+
+    }
+
+    /* CODE FOR RESPONSIVENESS */
+
+
+    @media screen and (max-width:650px) {
+        nav {
+            height: 2vh;
+        }
+
+        .logo {
+            height: 2vh;
+        }
+
+        #sub-container {
+            display: grid;
+        }
+
+        #menuBar {
+            display: none;
+        }
+
+        .curr-page {
+            background-color: transparent;
+            outline: 1px solid #1E1C1C;
+        }
+
+        .curr-page:hover {
+            outline: 1px solid #1E1C1C;
+        }
+
+        .sidebar {
+            width: 40vw;
+            padding: 0 2vw;
+        }
+
+        .sidebar a {
+            font-size: 5vw;
+            padding: 1vh 3vw;
+            margin: .5vh 0;
+        }
+
+    }
