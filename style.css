@@ -46,7 +46,7 @@ body {
 }
 
 .introImg > h1{
-    font-size: 8vw;
+    font-size: 10vw;
 }
 
 /* CODE FOR INTRO SECTION*/
@@ -65,7 +65,7 @@ body {
 }
 
 .intro-section > h4{
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     padding: 2vh 0;
 }
