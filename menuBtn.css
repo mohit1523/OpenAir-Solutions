@@ -27,7 +27,7 @@
         position: sticky;
         top: 0;
         left: 0;
-        height: 5vh;
+        /* height: 5vh; */
         display: flex;
         z-index: 5;
         justify-content: space-between;
@@ -92,6 +92,52 @@
         width: 100%;
     }
 
+    
+
+    /* CODE FOR MENUBAR */
+
+    #menuBar {
+        position: absolute;
+        right: 0;
+        padding: 2vh 1vw;
+    }
+
+    #menuBar a {
+        position: relative;
+        text-decoration: none;
+        color: #fffdfa;
+        padding: 0.5vh 1.5vw;
+        font-size: 2vw;
+        overflow: hidden;
+    }
+
+    #menuBar a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 2vw;
+        background-color: #81D959;
+        z-index: -1;
+        transition: 0.5s .2s;
+    }
+
+    #menuBar a:hover::before {
+        width: 100%;
+    }
+
+    .curr-page {
+        border-radius: 2vw;
+        /* background-color: #81D959; */
+        outline: 1px solid #fffdfa;
+        transition: .5s 1s;
+    }
+
+    .curr-page:hover {
+        outline: none;
+    }
 
     /* CODE FOR MENU BUTTON */
 
@@ -145,51 +191,6 @@
     #dash2 {
         position: relative;
         /* animation: rotateDash2 0.3s ease forwards; */
-    }
-
-    /* CODE FOR MENUBAR */
-
-    #menuBar {
-        position: absolute;
-        right: 0;
-        padding: 2vh 1vw;
-    }
-
-    #menuBar a {
-        position: relative;
-        text-decoration: none;
-        color: #fffdfa;
-        padding: 0.5vh 1.5vw;
-        font-size: 2vw;
-        overflow: hidden;
-    }
-
-    #menuBar a::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        border-radius: 2vw;
-        background-color: #81D959;
-        z-index: -1;
-        transition: 0.5s .2s;
-    }
-
-    #menuBar a:hover::before {
-        width: 100%;
-    }
-
-    .curr-page {
-        border-radius: 2vw;
-        /* background-color: #81D959; */
-        outline: 1px solid #fffdfa;
-        transition: .5s 1s;
-    }
-
-    .curr-page:hover {
-        outline: none;
     }
 
     /* ANIMATION KEYFRAMES */
