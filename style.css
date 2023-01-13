@@ -255,24 +255,6 @@ body {
     font-size: 5vw;
 }
 
-.vis-mis > div{
-    width: 40vw;
-}
-
-.vis-mis{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.vis-mis h1{
-    font-size: 5vw;
-}
-
-.vis-mis ul{
-    list-style-position: inside;
-}
-
 /* CODE FOR FOOTER */
 
 footer{
@@ -327,6 +309,10 @@ footer img:hover{
         width: 100vw;
     }
 
+    .step p{
+        font-size: 2.5vw;
+    }
+
     .steps-text{
         width: 100vw;
         margin-bottom: 1vh;
@@ -336,6 +322,16 @@ footer img:hover{
 
     .reviews{
         padding: 2vh 4vw 0vh 4vw;
+    }
+
+    .review{
+        width: 40vw;
+        margin-bottom: 2vh;
+    }
+
+    .review p{
+        font-size: 2.5vw;
+        padding: 0.5vh 1vw;
     }
 
     .faqs{
@@ -358,10 +354,15 @@ footer img:hover{
 
     .about1{
         padding: 2vh 2vw;
+        font-size: 2.5vw;
     }
 
     footer{
         padding: 1vh 3vw;
+    }
+
+    .copyright{
+        font-size: 2.2vw;
     }
 
     footer img{
