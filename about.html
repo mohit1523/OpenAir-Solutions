@@ -16,7 +16,7 @@
 
 <body>
     <nav id="navbar">
-        <img src="./src/logo_dopar_energy.png" class="logo" alt="">
+        <img src="src/logo-1.png" class="logo" alt="">
         <div id="container">
             <div id="sub-container">
                 <span id="dot1"></span>
@@ -50,10 +50,10 @@
     </div>
 
     <div id="main-container">
-        <img src="./src/ezgif.com-gif-maker.webp" alt="" srcset="">
+        <img src="src/about-img.jpg" alt="" srcset="" style="opacity: .5;">
         <h2 data-aos='fade-right' data-aos-duration="1000" data-aos-offset="25">ALL ABOUT <br> OPEN AIR SOLUTIONS</h2>
-        <h5 data-aos='fade-right' data-aos-duration="1000" data-aos-offset="25" style="letter-spacing: 0.2vw;"> - An
-            Electrical Vehicle Company.
+        <h5 data-aos='fade-right' data-aos-duration="1100" data-aos-offset="25" style="letter-spacing: 0vw;"> - An
+            Electrical Vehicle Repairing Company.
         </h5>
     </div>
 
@@ -147,13 +147,15 @@
     <br>
     <hr>
     <footer>
-        <div id="footer-text">© 2022 Copyright : Open Air Solutions Ltd.</div>
+        <div id="footer-text"></div>
         <div id="footer-icons">
-            <a href="#main-container"><img src="src/fb_logo.png" alt="" id="social-icons"> </a>
-            <a href="#main-container"><img src="src/instagram_logo.png" alt="" id="social-icons"></a>
-            <a href="https://www.linkedin.com/company/doper-energy/"><img src="src/linkedin_logo.png" alt=""
+            <a href="#https://wa.me/919404109692?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service.%20Can%20you%20please%20help%20me%20%3F" target = "_blank"><img src="src/whatsapp_logo.png" alt="" id="social-icons" > </a>
+            <a href="https://www.linkedin.com/company/openair-solutions/" target = "_blank"><img src="src/linkedin_logo.png" alt=""
                     id="social-icons"></a>
-            <a href="#main-container"><img src="src/twitter_logo.png" alt="" id="social-icons"></a>
+            <a href="#main-container" target = "_blank"><img src="src/fb_logo.png" alt="" id="social-icons"></a>
+            <a href="https://www.instagram.com/openair.solutions/" target = "_blank"><img src="src/instagram_logo.png" alt="" id="social-icons"></a>
+            
+            
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -162,4 +164,13 @@
     </script>
 </body>
 
+<script>
+
+    let copy = document.getElementById('footer-text');
+    let dt = new Date();
+    copy.innerHTML = `&#169; ${dt.getFullYear()} Copyright : Dopar Energy Ltd.`;
+    copy.style.color = "#81D959"
+    copy.style.fontSize = "1.9vw"
+
+</script>
 </html>
