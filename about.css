@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Gafata&family=Major+Mono+Display&family=Monoton&family=Rajdhani:wght@300&family=Syncopate&display=swap');
 
+
 *{
     scroll-behavior: smooth;
 }
@@ -60,6 +61,7 @@ body{
     color: #81D959;
 }
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +129,7 @@ h3, #vision1 > h1, #vision2 > h1{
     width: 3vw;
     height: 3vw;
     transition: 0.2s;
+    margin-left: 1vw;
 }
 
 #social-icons:hover{
@@ -182,7 +185,6 @@ h3, #vision1 > h1, #vision2 > h1{
     }
     #social-icons{
         width: 5.5vw;
-        font-family: A;
         height: 5.5vw;
     }
 
