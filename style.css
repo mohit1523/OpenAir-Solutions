@@ -24,7 +24,7 @@ body {
 /* CODE FOR INTRO VIDEO */
 
 .introImg img{
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -236,7 +236,7 @@ body {
 }
 
 .vis-mis > div{
-    width: 45vw;
+    width: 43vw;
 }
 
 .vis-mis{
@@ -294,13 +294,17 @@ footer img:hover{
     }
     
     .steps-section{
-        padding: 3vh 2vw 8vh 2vw;
+        padding: 3vh 2vw 12vh 2vw;
         flex-direction: column-reverse;
         align-items: center;
     }
 
     .steps{
         width: 100vw;
+    }
+
+    .step{
+        width: 30vw;
     }
 
     .step p{
@@ -330,7 +334,7 @@ footer img:hover{
 
     .faqs{
         flex-direction: column;
-        padding: 20vh 0 12vh 0;
+        padding: 23vh 0 15vh 0;
     }
 
     .questions > details{
