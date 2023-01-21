@@ -40,7 +40,9 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: radial-gradient(aquamarine,aqua,cornflowerblue);
+    background: url(src/main-img.png) no-repeat center;
+    background-color: #81D959;
+    background-size: contain;
     z-index: -1;
     opacity: .5;
 }
@@ -287,7 +289,7 @@ footer img:hover{
 @media screen and (max-width:650px) {
 
     .introImg{
-        height: 20vh;
+        height: 30vh;
     }
 
     .intro-section > h1{
