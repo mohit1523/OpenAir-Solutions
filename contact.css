@@ -1,5 +1,5 @@
 /* IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
 
 
@@ -52,7 +52,7 @@ input{
 .conform > h1 , .conInfo > h1{
     font-size: 3vw;
     margin-bottom: 3vh;
-    font-family: 'Righteous', cursive;
+    font-family: 'Assistant', sans-serif;
     font-weight: 200;
 }
 
@@ -126,6 +126,7 @@ input[type="submit"]:hover{
     text-decoration: none;
     color: #1E1C1C;
     transition: .1s;
+    font-weight: 900;
 }
 
 .topBox img{

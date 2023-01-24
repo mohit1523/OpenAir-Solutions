@@ -1,5 +1,6 @@
 /* IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Gafata&family=Major+Mono+Display&family=Monoton&family=Rajdhani:wght@300&family=Raleway:wght@200&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -31,26 +32,29 @@
 .product-images , .product-images2, .product-images3{
     background-color: var(--accent-color);
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-img , .main-img2,.main-img3{
-    margin-bottom: 2vw;
+    /* margin-bottom: 2vw; */
     width: 45vw;
     aspect-ratio: 4/3;
     overflow: hidden;
 }
 
-.product-images > div img , .product-images2 > div img, .product-images3 > div img{
+/* .product-images > div img , .product-images2 > div img, .product-images3 > div img{
     width: 10vw;
     height: 10vw;
     transition: .3s;
     border-radius: 1vw;
-}
+} */
 
-.product-images > div , .product-images2 > div, .product-images3 > div{
+/* .product-images > div , .product-images2 > div, .product-images3 > div{
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 
 
@@ -71,7 +75,7 @@
     position: relative;
     padding: 2vh 2vw;
     width: fit-content;
-    font-family: 'Felix Titling' , sans-serif;
+    font-family: 'Assistant' , sans-serif;
     /* background-color: var(--accent-color); */
     background-color: #81D959;
     border-radius: 1vw;
@@ -82,7 +86,8 @@
 
 .product-details > h1:hover{
     /* box-shadow: 0px 0px 5px black inset; */
-    box-shadow: 0px 0px 0.5vw rgba(230, 217, 217, 0.849) inset;
+    /* box-shadow: 0px 0px 0.5vw rgba(230, 217, 217, 0.849) inset; */
+    box-shadow: 0px 0px 0.5vw rgb(12, 12, 12) inset;
 }
 
 .sub-heading{
@@ -184,10 +189,10 @@ footer img:hover{
     .main-img,.main-img2,.main-img3{
         margin-bottom: 2vw;
     }
-    .product-images>div>img, .product-images2>div>img, .product-images3>div>img{
+    /* .product-images>div>img, .product-images2>div>img, .product-images3>div>img{
         width: 15vw;
         height: 15vw;
-    }
+    } */
 
     .specTit{
         font-size: 2.8vw;

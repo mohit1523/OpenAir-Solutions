@@ -1,6 +1,6 @@
 /* IMPORT STATEMENTS */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
 
 
@@ -40,7 +40,7 @@ body {
     font-size: 5vw;
     padding: 4vh 0;
     text-align: center;
-    font-family: 'Righteous', cursive;
+    font-family: 'Assistant', sans-serif;
     font-weight: 100;
 }
 
@@ -99,17 +99,16 @@ body {
 
 .steps-text span{
     font-size: 5vw;
-    font-family: 'Righteous' , cursive;
+    font-family: 'Assistant', sans-serif;
 }
 
 /* CODE FOR REVIEW SECTION */
 
 .review-text{
-    font-family: 'Righteous' , cursive;
+    font-family: 'Assistant', sans-serif;
     font-size: 5vw;
     text-align: center;
     color: #81D959;
-    -webkit-text-stroke: 1px #1E1C1C;
 }
 
 .reviews{
@@ -180,7 +179,7 @@ body {
     font-size: 5vw;
     color: #FFFDFA;
     text-align: center;
-    font-family: 'Righteous', cursive;
+    font-family: 'Assistant', sans-serif;
     font-weight: 100;
 }
 
@@ -213,7 +212,7 @@ body {
     position: relative;
     padding: 1vh 2vw;
     margin-bottom: 1vh;
-    font-family: 'Righteous', cursive;
+    font-family: 'Assistant', sans-serif;
     font-weight: 100;
 }
 
